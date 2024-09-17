@@ -65,7 +65,6 @@ async function updateBook(id: number) {
   console.log(`Update Book ${id} Response:`, data);
 }
 
-// Function to delete a book
 async function deleteBook(id: number) {
   const response = await fetch(`${baseUrl}/books/${id}`, {
     method: 'DELETE'
