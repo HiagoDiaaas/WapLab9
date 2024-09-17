@@ -8,6 +8,10 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use('/api', bookRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the Assigment 7 Book API of Hiago Dias');
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
